@@ -1,0 +1,29 @@
+About git repositary:
+-------------------
+Git is distributed version control repositary system.
+
+From first video:-
+----------------
+
+git init <directory>
+git add
+git status
+git commit -m
+git log
+git rm --cached <file name>
+
+git log --oneline
+
+after changing any file:
+	1. fist we have to add that file to cached area
+	2. then we have to commit to local repositary using "git commit" command.
+
+we can do these two steps with a single command is
+
+git commit -a -m "mesg"
+
+when we changed or modified a file, if we want to remove last changes occur in the file use
+
+git checkout -- <filename>
+
+******************* ABOVE ALL COMMANDS ARE ACTUALLY USING TO COMMIT THE FILES INTO LOCAL REPOSITORY *********************
