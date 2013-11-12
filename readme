@@ -27,3 +27,42 @@ when we changed or modified a file, if we want to remove last changes occur in t
 git checkout -- <filename>
 
 ******************* ABOVE ALL COMMANDS ARE ACTUALLY USING TO COMMIT THE FILES INTO LOCAL REPOSITORY *********************
+
+------------------------>>>>>>>>entering or saving files from local repository to remote repositary
+	1.after all the commits made or required commit is over..if you want to save that in remote repositary
+		a. first you have to create a account in the github
+			--goto "www.github.com" and signup.
+			--if you want to see the latest version of git goto "www.git-scm.com".
+			-- this account is a PUBLIC . any one can see your files and modify those. because it is free account.
+			-- if you want to protect from accessing by others you have to pay money as monthly charges.
+			-- here when you create repositary the default branch is "MASTER"
+		b. after signin you can find your userid as your account and there you can create your repositarys.
+		c. create one repository and say "MyGITsaving"
+		d. the remote repositary name can be found with following syntax
+			
+			"git@github.com:'username'/'repositary name'.git"
+	2.now use command to create remote repositary
+		git remote add origin git@github.com:Gashoka/MyGITsaving.git
+			--here origin is the default name of remote repositary..
+				you can use any name here other than origin
+	3.Pushing is how you transfer commits from your local repository to a remote repo.
+		git push origin master
+			--origin is the remote repositary name 
+			-- master is the default branch of repositary where you want to transfer commits
+	4.The git pull Command
+
+		Merging upstream changes into your local repository is a common task in Git-based collaboration workflows.
+		 We already know how to do this with git fetch followed by git merge, but git pull rolls this into a single command.
+		
+			git pull origin master
+	5.The git fetch Command
+
+		The git fetch command imports commits from a remote repository into your local repo. 
+		The resulting commits are stored as remote branches instead of the normal local branches that we’ve been working with. 
+		This gives you a chance to review changes before integrating them into your copy of the project.
+	
+			git fetch origin master
+	6.the Git clone(exactly the same copy) command
+		Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository 
+		(visible using git branch -r), and creates and checks out an initial branch that is forked from the cloned repository's currently active branch. 
+		https://www.atlassian.com/git/tutorial/undoing-changes
